@@ -1,5 +1,5 @@
 {
-  description = "Flake to build and develop 'odoo.box'.";
+  description = "Flake to build and develop 'wordpress.box'.";
 
   inputs = {
     nixpkgs.url = "github:NixOs/nixpkgs/nixos-23.11";

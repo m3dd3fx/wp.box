@@ -25,7 +25,7 @@
             WP_MAX_MEMORY_LIMIT = "1024M";
 	        WP_DEBUG = true;
             WP_DEBUG_LOG = true;
-        };
+        }; 
     };
 
 }
