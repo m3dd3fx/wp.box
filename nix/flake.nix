@@ -2,22 +2,25 @@
   description = "Flake to build and develop 'wordpress.box'.";
 
   inputs = {
-    nixpkgs.url = "github:NixOs/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:NixOs/nixpkgs/nixos-24.05";
   };
 
   outputs = { self, nixpkgs }:
   let
-    pkgs = import ./pkgs {
+    mypkgs = import ./pkgs {
 
-        pkgs = nixpkgs.legacyPackages.aarch64-linux;
-    
+      pkgs = nixpkgs.legacyPackages.aarch64-linux;
+
     };
+
+    allpkgs = mypkgs // nixpkgs.legacyPackages.aarch64-linux;
 
     nodes = import ./nodes {
       nixosSystem = nixpkgs.lib.nixosSystem;
+      pkgs = allpkgs;
     };
     
   in
-     pkgs // nodes;
+     mypkgs // nodes;
 
 }

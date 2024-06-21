@@ -3,7 +3,7 @@
 #
 {
   # `lib.nixosSystem` in the selected Nixpkgs.
-  nixosSystem, ...
+  nixosSystem, pkgs, ...
 }:
 
 {
@@ -11,11 +11,13 @@
         ec2 = nixosSystem {
             system = "aarch64-linux";
             modules = [ ./ec2-aarch64/configuration.nix ];
+            inherit pkgs;
         };
 
         devm = nixosSystem {
             system = "aarch64-linux";
             modules = [ ./devm-aarch64/configuration.nix ];
+            inherit pkgs;
         };
     };
 }

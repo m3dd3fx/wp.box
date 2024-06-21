@@ -6,10 +6,11 @@
     	pkgs.eza
 	    pkgs.bat
 	    pkgs.dogdns
+        pkgs.git
     ];    
 
     time.timeZone = "Europe/Amsterdam";
-    system.stateVersion = "23.11";
+    system.stateVersion = "24.05";
 
     networking.firewall = {
         enable = true;
@@ -26,7 +27,17 @@
 	        WP_DEBUG = true;
             WP_DEBUG_LOG = true;
         
-        }; 
+        };
+
+        plugins = {
+            plugin-connect-matomo = pkgs.plugin-connect-matomo;
+            plugin-jetpack = pkgs.plugin-jetpack;
+        };
+
+        themes = {
+            theme-responsive = pkgs.theme-responsive;
+            theme-hello-elementor = pkgs.theme-hello-elementor;
+        };
     };
 
 }
