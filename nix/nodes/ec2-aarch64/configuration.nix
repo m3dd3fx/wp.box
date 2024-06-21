@@ -10,7 +10,7 @@
     ];
 
     time.timeZone = "Europe/Amsterdam";
-    system.stateVersion = "24.05";
+    system.stateVersion = "23.11";
 
     networking.firewall = {
         enable = true;
@@ -20,13 +20,20 @@
     services.openssh.enable = true;
     services.wordpress.webserver = "nginx";
 
+    services.nginx = {
+      recommendedOptimisation = true;
+      recommendedTlsSettings = true;
+      recommendedGzipSettings = true;
+    };
+
     services.wordpress.sites."localhost" = {
         settings = {
+            WP_SITEURL = "http://52.212.203.196/";
+            WP_HOME = "http://52.212.203.196/";
 	        WP_MEMORY_LIMIT = "512M";
             WP_MAX_MEMORY_LIMIT = "1024M";
 	        WP_DEBUG = true;
             WP_DEBUG_LOG = true;
-
         };
 
         plugins = {

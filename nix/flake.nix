@@ -2,7 +2,7 @@
   description = "Flake to build and develop 'wordpress.box'.";
 
   inputs = {
-    nixpkgs.url = "github:NixOs/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOs/nixpkgs/nixos-23.11";
   };
 
   outputs = { self, nixpkgs }:
