@@ -7,6 +7,7 @@
       pkgs.bat
       pkgs.dogdns
       pkgs.git
+      pkgs.wordpress6_4
     ];
 
     time.timeZone = "Europe/Amsterdam";
@@ -25,7 +26,8 @@
       recommendedTlsSettings = true;
       recommendedGzipSettings = true;
     };
-
+    
+    services.wordpress.sites."localhost".package = pkgs.wordpress6_4;
     services.wordpress.sites."localhost" = {
         settings = {
             WP_SITEURL = "http://52.212.203.196/";
