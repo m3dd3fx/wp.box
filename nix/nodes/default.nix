@@ -8,7 +8,7 @@
 
 {
     nixosConfigurations = {
-        ec2 = nixosSystem {
+        ec2-aarch64-linux = nixosSystem {
             system = "aarch64-linux";
             modules = [ ./ec2-aarch64/configuration.nix ];
             inherit pkgs;
