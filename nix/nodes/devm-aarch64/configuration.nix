@@ -16,7 +16,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Host basic configuration  
-  networking.hostName = "wpbox";
+  networking.hostName = "devm";
   time.timeZone = "Europe/Amsterdam";
   system.stateVersion = "23.11";
   
