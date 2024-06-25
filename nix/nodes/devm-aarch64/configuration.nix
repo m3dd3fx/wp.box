@@ -4,6 +4,7 @@
     ./hardware-configuration.nix
   ];
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = [
     pkgs.eza
     pkgs.bat
@@ -52,13 +53,10 @@
     plugins = {
       plugin-connect-matomo = pkgs.wpbox.plugin-connect-matomo;
       plugin-jetpack = pkgs.wpbox.plugin-jetpack;
-      plugin-prime-mover = pkgs.wpbox.plugin-prime-mover;
       plugin-better-search-replace = pkgs.wpbox.plugin-better-search-replace;
       plugin-broken-link-checker = pkgs.wpbox.plugin-broken-link-checker;
       plugin-child-theme-configurator = pkgs.wpbox.plugin-child-theme-configurator;
       plugin-elementor = pkgs.wpbox.plugin-elementor;
-      
-
     };
 
     themes = {
