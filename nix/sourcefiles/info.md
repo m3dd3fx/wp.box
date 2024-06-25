@@ -1,0 +1,1 @@
+Only using GIT as a source 4 downloading plugins not available on that flipping wordpress

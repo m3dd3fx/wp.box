@@ -21,7 +21,28 @@ let
   plugin-connect-matomo = import ./plugins/matomo {
     pkgs = sysPkgs;
   };
+  plugin-better-search-replace = import ./plugins/better-search-replace {
+    pkgs = sysPkgs;
+  };
+  plugin-broken-link-checker = import ./plugins/broken-link-checker {
+    pkgs = sysPkgs;
+  };
+  plugin-child-theme-configurator = import ./plugins/child-theme-configurator {
+    pkgs = sysPkgs;
+  };
+  plugin-download-manager-pro = import ./plugins/download-manager-pro {
+    pkgs = sysPkgs;
+  };
+  plugin-elementor = import ./plugins/elementor {
+    pkgs = sysPkgs;
+  };
+  plugin-elementor-pro = import ./plugins/elementor-pro {
+    pkgs = sysPkgs;
+  };
+
+
 in rec {
     inherit theme-hello-elementor theme-responsive
-            plugin-jetpack plugin-connect-matomo;
+            plugin-jetpack plugin-child-theme-configurator plugin-elementor
+            plugin-broken-link-checker plugin-better-search-replace plugin-connect-matomo;
 }
