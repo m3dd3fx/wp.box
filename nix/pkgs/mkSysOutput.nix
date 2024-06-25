@@ -9,12 +9,16 @@
   ...
 }:
 let
+
+  # LIST OF PACKAGED AND USABLE THEMES 
   theme-hello-elementor = import ./wp-themes/hello-elementor {
     pkgs = sysPkgs;
   };
   theme-responsive = import ./wp-themes/responsive {
     pkgs = sysPkgs;
   };
+
+  # LIST OF PACKAGED AND USABLE THEMES 
   plugin-jetpack = import ./plugins/Jetpack {
     pkgs = sysPkgs;
   };
@@ -40,9 +44,8 @@ let
     pkgs = sysPkgs;
   };
 
-
 in rec {
     inherit theme-hello-elementor theme-responsive
-            plugin-jetpack plugin-child-theme-configurator plugin-elementor
+            plugin-jetpack plugin-child-theme-configurator plugin-elementor plugin-elementor-pro
             plugin-broken-link-checker plugin-better-search-replace plugin-connect-matomo;
 }

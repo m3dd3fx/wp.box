@@ -57,11 +57,11 @@
       plugin-broken-link-checker = pkgs.wpbox.plugin-broken-link-checker;
       plugin-child-theme-configurator = pkgs.wpbox.plugin-child-theme-configurator;
       plugin-elementor = pkgs.wpbox.plugin-elementor;
+      plugin-elementor-pro = pkgs.wpbox.plugin-elementor-pro;
     };
 
     themes = {
       theme-responsive = pkgs.wpbox.theme-responsive;
-      theme-hello-elementor = pkgs.wpbox.theme-hello-elementor;
     };
   };
 
