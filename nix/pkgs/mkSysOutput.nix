@@ -90,7 +90,7 @@ let
   };
   plugin-yoast-duplicate = import ./plugins/yoast {
     pkgs = sysPkgs;
-  }
+  };
 
 in rec {
     inherit theme-hello-elementor theme-responsive theme-kadence
