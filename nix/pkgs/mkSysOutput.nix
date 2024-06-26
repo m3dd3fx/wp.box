@@ -88,7 +88,7 @@ let
   plugin-wp-rocket = import ./plugins/wp-rocket {
     pkgs = sysPkgs;
   };
-  plugin-yoast-duplicate = import ./plugins/yoast {
+  plugin-yoast-duplicate = import ./plugins/yoast-duplicate {
     pkgs = sysPkgs;
   };
 
