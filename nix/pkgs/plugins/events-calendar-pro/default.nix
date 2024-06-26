@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
   version = "6.5.0";
   src = pkgs.fetchzip {
     url = "https://repo.martel-consulting.ch/events-calendar-pro.${version}.zip";
-    hash = "sha256-t49CXIDmZtv1iDOzyHyd0JHwTdXFM78dKZnjZcXErFw=";
+    hash = "sha256-JccphC4KDXn1ujrgFy2C4SIZ7wDOfaIxMkYTwF9sw0A=";
   };
   installPhase = "mkdir -p $out; cp -R * $out/";
 }

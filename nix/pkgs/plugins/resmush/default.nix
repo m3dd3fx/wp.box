@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
   version = "1.0.3";
   src = pkgs.fetchzip {
     url = "hhttps://downloads.wordpress.org/plugin/resmushit-image-optimizer.${version}.zip";
-    hash = "sha256-t49CXIDmZtv1iDOzyHyd0JHwTdXFM78dKZnjZcXErFw=";
+    hash = "sha256-nNLyCWX0X6Jjkb19VTkeDZHKq4cxkrhgz6WpCXdh4uc=";
   };
   installPhase = "mkdir -p $out; cp -R * $out/";
 }

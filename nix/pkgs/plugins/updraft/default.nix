@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
   version = "1.24.3";
   src = pkgs.fetchzip {
     url = "https://downloads.wordpress.org/plugin/updraftplus.${version}.zip";
-    hash = "sha256-t49CXIDmZtv1iDOzyHyd0JHwTdXFM78dKZnjZcXErFw=";
+    hash = "sha256-/Hl0XpXkYY1KCDDPeT9tqhvG5OgIyNeWkZkkypISPUo=";
   };
   installPhase = "mkdir -p $out; cp -R * $out/";
 }
