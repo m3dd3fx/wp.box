@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
   version = "1.4";
   src = pkgs.fetchzip {
     url = "https://downloads.wordpress.org/plugin/show-modified-date-in-admin-lists.${version}.zip";
-    hash = "sha256-BahWcYEnFo2LiSRQ8MEFz1ze1+cQRdRw0lyaXi13O3o=";
+    hash = "sha256-2uE3JlRB+iUTsMNecs1COnPNjOZuh+15OGkSuX5Du08=";
   };               
   installPhase = "mkdir -p $out; cp -R * $out/";
 }

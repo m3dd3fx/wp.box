@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
   version = "5.4.2";
   src = pkgs.fetchzip {
     url = "https://downloads.wordpress.org/plugin/redirection.${version}.zip";
-    hash = "sha256-70cz02IEYHvLVSYqzoJmbtDlnSa0O8cQPyajgkfy8u4=";
+    hash = "sha256-7kkR+6o3GxthFp3i/6pIOstxo1qK3cBjEp9s1yay7Rw=";
   };
   installPhase = "mkdir -p $out; cp -R * $out/";
 }

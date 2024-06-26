@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation rec {
   version = "1.34.1";
   src = pkgs.fetchzip {
     url = "https://downloads.wordpress.org/plugin/social-pug.${version}.zip";
-    hash = "sha256-UhQR4rOiukSZeDQfWh7+ANh9d1vHF5tx2EG+YdZxx58=";
+    hash = "sha256-fP4GJ46UeY6dw+K7+ahvMLCJ7LQbp8JftTC1L9El93Y=";
   };
   installPhase = "mkdir -p $out; cp -R * $out/";
 }
