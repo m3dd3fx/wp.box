@@ -58,10 +58,28 @@
       plugin-child-theme-configurator = pkgs.wpbox.plugin-child-theme-configurator;
       plugin-elementor = pkgs.wpbox.plugin-elementor;
       plugin-elementor-pro = pkgs.wpbox.plugin-elementor-pro;
+      plugin-hubbub-lite = pkgs.wpbox.plugin-hubbub-lite;
+      plugin-download-manager-pro = pkgs.wpbox.plugin-download-manager-pro;
+      plugin-index-wp-mysql = pkgs.wpbox.plugin-index-wp-mysql;
+      plugin-kadence-pro = pkgs.wpbox.plugin-kadence-pro;
+      plugin-lightstart = pkgs.wpbox.plugin-lightstart;
+      plugin-permalink = pkgs.wpbox.plugin-permalink;
+      plugin-redirection = pkgs.wpbox.plugin-redirection;
+      plugin-resmush = pkgs.wpbox.plugin-resmush;
+      plugin-admin-lists = pkgs.wpbox.plugin-admin-lists;
+      plugin-events-calendar = pkgs.wpbox.plugin-events-calendar;
+      plugin-events-calendar-pro = pkgs.wpbox.plugin-events-calendar-pro;
+      plugin-updraft = pkgs.wpbox.plugin-updraft;
+      plugin-wordpress-importer = pkgs.wpbox.plugin-wordpress-importer;
+      plugin-recent-posts = pkgs.wpbox.plugin-recent-posts;
+      plugin-wp-rocket = pkgs.wpbox.plugin-wp-rocket;
+      plugin-yoast-duplicate = pkgs.wbox.plugin-yoast;
     };
 
     themes = {
       theme-responsive = pkgs.wpbox.theme-responsive;
+      theme-hello-elementor = pkgs.wpbox.theme-hello-elementor;
+      theme-kadence = pkgs.wpbox.theme-kadence;
     };
   };
 
